@@ -1,0 +1,155 @@
+@-webkit-keyframes showError {
+  50% {
+    color: #d45656;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    color: #333333;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes showError {
+  50% {
+    color: #d45656;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    color: #333333;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.is-animated-wrong {
+  -webkit-animation: 0.33s showError;
+          animation: 0.33s showError;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.text-alert {
+  color: #d45656;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.mt20 {
+  margin-top: 100px;
+}
+
+.m50 {
+  margin: 50px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.font-size-lg {
+  font-size: 60px;
+}
+
+.font-size-md {
+  font-size: 50px;
+}
+
+.l-wrapper-lg {
+  width: 70%;
+  height: 400px;
+  margin: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  -webkit-transition: all 0.33s ease-out;
+  transition: all 0.33s ease-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section-md {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-md {
+  position: relative;
+}
+
+.section-sm {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  color: #7ecc00;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+}
+
+@media (max-width: 1100px) {
+  .section-sm {
+    background: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body.overlay-is-open .overlay {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body.overlay-is-open .main-ui {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+/*# sourceMappingURL=style.css.map */

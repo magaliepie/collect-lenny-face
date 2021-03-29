@@ -1,0 +1,35 @@
+@import './variables';
+
+// utilities properties
+.text-center {
+    text-align: center;
+}
+.font-nunito {
+    font-family: $font-nunito;
+}
+// color properties
+.text-alert {
+    color: $text-alert;
+}
+// margin variables  properties
+.m10 {
+    margin: $m10;
+}
+.mt20 {
+    margin-top: 100px;
+}
+.m50 {
+    margin: 50px;
+}
+
+// padding properties
+.p10 {
+    padding: $p10;
+}
+// font properties
+.font-size-lg {
+    font-size: $font-size-lg;
+}
+.font-size-md {
+    font-size: $font-size-md;
+}

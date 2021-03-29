@@ -1,0 +1,18 @@
+.section-md {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section-md {
+    position: relative;
+}
+.section-sm {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    color: #7ecc00;
+    transform: scaleX(0);
+    transform-origin: center left;
+    transition: transform 0.4s ease-out;
+}

@@ -1,0 +1,17 @@
+@import './variables';
+
+// animte incorrect answers
+@keyframes showError {
+    50% {
+        color: $text-alert;
+        transform: scale(1.5);
+    }
+    100% {
+        color: $text-secondary;
+        transform: scale(1);
+    }
+}
+
+.is-animated-wrong {
+    animation: 0.33s showError;
+}

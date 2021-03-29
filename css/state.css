@@ -1,0 +1,12 @@
+body.overlay-is-open .overlay {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body.overlay-is-open .main-ui {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+/*# sourceMappingURL=state.css.map */

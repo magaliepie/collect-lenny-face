@@ -1,0 +1,8 @@
+body.overlay-is-open .overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+body.overlay-is-open .main-ui {
+    filter: blur(1px);
+}
